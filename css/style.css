@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=BIZ+UDPGothic:wght@400;700&family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+body {
+    margin: 0px;
+    width: 100%;
+    background-color: #FFC832;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #FFC832;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #fff5db;
+    width: 6px;
+    border-radius: 6px 0px 0px 6px;
+    border-left: #FFC832 2px solid;
+}
+
+h1 {
+    font-family: "Inter", "Noto Sans JP", sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Inter", "Noto Sans JP", sans-serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #ffc832;
+    font-weight: bold;
+}
+
+.top {
+    background-color: #fff5db;
+    background-image: linear-gradient(-63deg, #fff 25%, #fff5db 25%, #fff5db 50%, #fff 50%, #fff 75%, #fff5db 75%, #fff5db);
+    background-size: 30px 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100dvw - 64px);
+    height: calc(100dvh - 64px);
+    max-height: calc(100dvh - 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 48px;
+}
+
+.top img {
+    padding-top: 55vh;
+    height: 150dvh;
+    filter: drop-shadow(15px 15px 0px rgba(255, 200, 50, 0.5));
+}
+
+.top .top-text {
+    width: 50dvh;
+    margin-top: 6dvh;
+}
+
+.top .top-text h1 {
+    text-align: left;
+    font-size: 64px;
+    font-weight: bold;
+    color: #181616;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+.top .top-text h1 [data-ruby] {
+    position: relative;
+}
+
+.top .top-text h1 [data-ruby]::before {
+    content: attr(data-ruby);
+    position: absolute;
+    top: -1em;
+    left: 0;
+    right: 0;
+    margin: auto -8px auto auto;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.top .top-text .about {
+    background-color: #FFC832;
+    border-radius: 0px 25px 25px 25px;
+    width: calc(100% - 32px);
+    padding: 16px;
+}
+
+.top .top-text .about p {
+    color: #fff;
+    font-size: 18px;
+    margin: 0px;
+    line-height: 22px;
+}
+
+.top .top-text .eng_rana {
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFC832;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: -12px;
+}
+
+main {
+    margin-top: 100dvh;
+    padding-bottom: 128px;
+    width: 100%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff5db;
+    overflow: hidden;
+}
+
+main hr {
+    border: none;
+    border-top: 3px dashed #FFC832;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+main hr::after {
+    display: inline-block;
+    border: solid 1px #FFC832;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    background-color: #fff5db;
+    content: "🍊";
+    color: transparent;
+    text-shadow: 0 0 0 #FFC832;
+    padding: 0px;
+    position: relative;
+    top: -14px;
+}
+
+main .link_button {
+    width: fit-content;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    background-color: #FFC832;
+    border: solid 1px #ffc832;
+    border-radius: 50px;
+
+    transition: 500ms;
+    padding: 8px 48px;
+    font-size: 24px;
+    font-family: "Inter", 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 10px 25px 0 rgba(255, 200, 50, .0);
+}
+
+main .link_button:hover {
+    background-color: #FFF;
+    border: solid 1px #ffc832;
+    color: #ffc832;
+    box-shadow: 0 10px 25px 0 rgba(255, 200, 50, .1);
+    padding: 8px 84px 8px 12px;
+}
+
+main .link_button:active {
+    background-color: #ffc832;
+    border: solid 1px #ffc832;
+    color: #fff;
+    box-shadow: 0 10px 25px 0 rgba(255, 200, 50, .0);
+    padding: 8px 74px 8px 12px;
+    font-size: 24px;
+}
+
+
+main .article {
+    width: 1080px;
+    margin: 0px auto 48px auto;
+}
+
+main .article h1 {
+    font-family: "Inter", "Noto Sans JP", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #FFC832;
+    margin: 16px 0px;
+}
+
+main .article h2 {
+    font-family: "Inter", "Noto Sans JP", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFC832;
+    margin: 16px 0px;
+}
+
+
+main .article h3 {
+    font-family: "Inter", "Noto Sans JP", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #181616;
+    margin: 16px 0px;
+}
+
+main .article p {
+    font-family: "Inter", "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #181616;
+    margin: 16px 0px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+    gap: 32px;
+}
+
+.centerbox {
+    display: block;
+    width: fit-content;
+    margin: 0px auto;
+    text-align: center;
+}
+
+main .article .about_rana {
+    width: calc(60% - 34px);
+}
+
+main .article .about_rana table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    font-family: "Inter", "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+main .article .about_rana table th,
+td {
+    vertical-align: top;
+    border-bottom: solid 1px #FFC832;
+    color: #181616;
+    font-weight: normal;
+    padding: 8px;
+}
+
+main .article .about_rana table tr:last-child th {
+    border-bottom: 0;
+}
+
+main .article .about_rana table tr:last-child td {
+    border-bottom: 0;
+}
+
+main .article .rana_img {
+    width: 40%;
+    height: fit-content;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #EEE 25%, transparent 25%, transparent 75%, #EEE 75%), linear-gradient(45deg, #EEE 25%, transparent 25%, transparent 75%, #EEE 75%);
+    background-color: #FFF;
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    border: solid 1px #ffc832;
+}
+
+main .article .rana_img img {
+    width: 100%;
+    height: fit-content;
+}
+
+footer {
+    margin-top: -128px;
+    width: calc(100% - 64px);
+    height: fit-content;
+    padding: 32px;
+    background-color: #FFC832;
+    border-radius: 48px 48px 0px 0px;
+}
+
+footer .footer_text {
+    width: 100%;
+    height: fit-content;
+    margin: 0px auto;
+    text-align: left;
+}
+
+footer .footer_text p {
+    font-family: "Inter", "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #181616;
+    margin: 0px;
+}
+
+footer .footer_text a {
+    font-family: "Inter", "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #181616;
+    margin: 0px;
+    transition: all 250ms ease-out;
+}
+
+footer .footer_text .daichimarukana:hover {
+    background-color: #FFF;
+    color: #F51F75;
+    padding: 2px 8px;
+    border-radius: 25px;
+}
+
+footer .footer_text .uwuzu:hover {
+    background-color: #FFF;
+    color: #FFC832;
+    padding: 2px 8px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 1280px) {
+
+    body::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        width: 4px;
+    }
+
+    .top {
+        width: 100dvw;
+        height: 100dvh;
+        max-height: 100dvh;
+        display: block;
+        position: absolute;
+        border-radius: 0px;
+    }
+
+    .top img {
+        position: absolute;
+        right: -156px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0vh;
+        height: 150dvh;
+    }
+
+    .top .top-text {
+        position: absolute;
+        left: 50%;
+        top: auto;
+        bottom: 0%;
+        transform: translateX(-50%);
+        width: calc(100dvw - 48px);
+        margin-bottom: 24px;
+    }
+
+    .flexbox {
+        display: block;
+    }
+
+
+    main .article h1 {
+        font-size: 32px;
+    }
+
+    main .article h2 {
+        font-size: 24px;
+    }
+
+
+    main .article h3 {
+        font-size: 20px;
+    }
+
+    main .article p {
+        font-size: 18px;
+    }
+
+    main .article .about_rana {
+        width: 100%;
+    }
+
+    main .article .rana_img {
+        width: 100%;
+    }
+
+    main .article {
+        width: calc(100% - 48px);
+    }
+
+    footer {
+        border-radius: 32px 32px 0px 0px;
+    }
+}
